@@ -33,7 +33,7 @@
                 <textarea name="description" id="desc_box" placeholder="Give details about the item e.g. size / weight / colour / condition"></textarea>
             </div>
             <div id="image">
-                    <input type="file" name="image" accept="image/*">
+                    <input type="file" name="image" accept="image/*" onchange="readURL(this);">
             </div>
             <div id="submit">
                 <input type="submit" value="Sell!" id="submit_button">
