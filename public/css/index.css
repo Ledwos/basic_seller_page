@@ -1,3 +1,91 @@
+body {
+    background-color: rgb(206, 212, 178);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    border: 5px solid rgb(199, 93, 93);
+    transform: skewX(-10deg);
+    padding: 5px 50px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+}
+
 h1 {
+    margin-bottom: 0%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+    margin-top: 0%;
+}
+
+span {
     color: red;
+}
+
+h3 {
+    margin-top: 0%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#form_container {
+    display: flex;
+    justify-content: center;
+    min-width: 30%;
+    border: 2px solid blue;
+    margin-top: 20px;
+}
+
+form {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    flex-direction: column;
+    padding: 40px 40px;
+    border: 5px solid rgb(199, 93, 93);
+    background-color: rgb(233, 233, 233);
+}
+
+#name, #price, #image, #submit, #description{
+    margin: -15px 30px 40px 30px;
+    padding: 10px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+}
+
+/* just to see all objects in play */
+#name, #price, #description, #image {
+    /* border: 3px solid rgb(199, 93, 93);
+    border-radius: 10px; */
+
+}
+
+}
+#submit {
+    border: 2px solid red;
+}
+
+#submit_button {
+    border-radius: 10px;
+    height: 40px;
+}
+
+#submit_button:hover {
+    background-color: rgb(199, 93, 93);
+    color: whitesmoke;
+}
+
+#desc_box {
+    width: 300px;
+    height: 50px;
+}
+
+.text_box {
+    width: 300px;
 }

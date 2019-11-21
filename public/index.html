@@ -8,22 +8,38 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <link href="./css/index.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900i&display=swap" rel="stylesheet">
+    <title>Fle-e-Market</title>
 </head>
 <body>
     <header>
-        <h1>You can see me!</h1>
+        <div id="title">
+            <h1>Fle-<span>e</span>-Market</h1>
+            <h3>Don't need it? Sell it! (no ex-husbands)</h4>
+        </div>
     </header>
-    <form action="/info" method="GET">
-        <label>Name: </label>
-        <input type="text" placeholder="Item name" name="name"><br>
-        <label>Price: </label>
-        <input type="text" placeholder="Selling price" name="price"><br>
-        <label>Description: </label>
-        <textarea name="description" placeholder="Give details about the item e.g. size / weight / colour / condition"></textarea><br>
-        <input type="file" name="image" accept="image/*"><br>
-        <input type="submit" value="Sell!">
-    </form>
+    <div id="form_container">
+        <form action="/info" method="GET">
+            <div id="name">
+                <label>Name: </label>
+                <input type="text" placeholder="Item name" name="name" class="text_box">
+            </div>
+            <div id="price">
+                <label>Price: </label>
+                <input type="text" placeholder="Selling price" name="price" class="text_box">
+            </div>
+            <div id="description">
+                <label id="desc_label">Description: </label>
+                <textarea name="description" id="desc_box" placeholder="Give details about the item e.g. size / weight / colour / condition"></textarea>
+            </div>
+            <div id="image">
+                    <input type="file" name="image" accept="image/*">
+            </div>
+            <div id="submit">
+                <input type="submit" value="Sell!" id="submit_button">
+            </div>
+        </form>
+    </div>
     
 </body>
 </html>

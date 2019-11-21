@@ -1,9 +1,21 @@
 HTML
 style
     include ../public/css/seller_page.css
-h1 You can see me right? Cool :D
-p I'm blue :P
 
-p Results are as shown:
+header
+    img(src="../company_logo.png")
 
-p=info.description
+
+div.item_box
+    div.img_box
+    div.info_box 
+        h2.name.head=name
+        div.price
+            p.money.head Price: £
+            p.money.text=price
+        div.description
+            p.head Description:
+            p.text=description
+
+
+
