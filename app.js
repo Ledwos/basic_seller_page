@@ -11,6 +11,11 @@ app.get('/', (req,res) =>
 
 app.listen(port, () => console.log(`listening on port ${port}`));
 
-app.get('/info', (req, res) =>
-     console.log(req.params.body));
-    //  res.render('seller_page.pug');
+app.get('/info', (req, res) => {
+    let name = req.query.name
+    let price = req.query.price
+    let description = req.query.description
+    // console.log(req.query)
+   res.render('seller_page.pug', {name: name, price: price, description: description});
+
+});
