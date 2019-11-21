@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <link href="./css/index.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>You can see me!</h1>
+    </header>
+    <form action="/info" method="POST">
+        <label>Name: </label>
+        <input type="text" placeholder="Item name" name="name"><br>
+        <label>Price: </label>
+        <input type="text" placeholder="Selling price" name="price"><br>
+        <label>Description: </label>
+        <textarea name="description" placeholder="Give details about the item e.g. size / weight / colour / condition"></textarea><br>
+        <input type="file" name="image" accept="image/*"><br>
+        <input type="submit" value="Sell!">
+    </form>
+    
+</body>
+</html>
